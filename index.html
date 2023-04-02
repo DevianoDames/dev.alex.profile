@@ -7,34 +7,69 @@
     <title>Profile Page</title>
     
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/4bf0a75058.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <h1 class="hidden">Welcome to join our team</h1>
+
     <div class="container">
-        <h1 class="heading"><span>meet</span>Our Team</h1>
-        <div class="profiles">
-            <div class="profile">
-                <img src="images/Alex_profile.jpg" class=" profile-img">
-
-                <h3 class="user-name">Alex</h3>
-                <h5>IT Specialist</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe vel obcaecati, ipsum eligendi est aliquid eaque tempore nesciunt reprehenderit quia, rem ad exercitationem excepturi corporis! Pariatur ipsa velit modi amet!</p>
-            </div>
-            <div class="profile">
-                <img src="images/DevianoDames.jpg" class=" profile-img">
-
-                <h3 class="user-name">Deviano</h3>
-                <h5>Motion Designer Specialist</h5>
-                <p>Deviano is CodeSphere's motion designer. Deviano Dames, who was born and raised in the Bahamas, relocated to Canada in 2020 and enrolled at Fanshawe College to study interactive media and design. For more information, click the image.</p>
-            </div>
-            <div class="profile">
-                <img src="images/ethan.png" class=" profile-img">
-
-                <h3 class="user-name">Ethan</h3>
-                <h5>Web Developer Specialist</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe vel obcaecati, ipsum eligendi est aliquid eaque tempore nesciunt reprehenderit quia, rem ad exercitationem excepturi corporis! Pariatur ipsa velit modi amet!</p>
-            </div>
+        <div class="heading">
+            <h2>meet Our Team</h2>
+            <h3>We are a team of passionate web designers committed to creating visually stunning and user-friendly websites that help businesses succeed online.</h3>
         </div>
+        <section class="profiles">
+            <h2 class="hidden">brief infomation</h2>
+            <div class="profile" onclick="fetch_info(0)">
+                <img src="images/alex1.jpg" class="profile-img" alt="members">
+                <h3 class="user-name">Alex</h3>
+                <div class="media-icon">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <button class="btn">Read More</button>
+            </div>
+            <div class="profile" onclick="fetch_info(1)">
+                <img src="images/deviano1.jpg" class="profile-img" alt="members">
+                <h3 class="user-name">Deviano</h3>
+                <div class="media-icon">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <button class="btn">Read More</button>
+            </div>
+            <div class="profile" onclick="fetch_info(2)">
+                <img src="images/ethan.png" class="profile-img" alt="members">
+                <h3 class="user-name">Ethan</h3>
+                <div class="media-icon">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <button class="btn">Read More</button>
+            </div>
+        </section>
+
+        <section id="info-con">
+            <h2 class="hidden">Details information</h2>
+            <div id="info-container">
+                <div class="profile">
+                    <img src="images/alex3.jpg" class="profilebox-img" id="profilebox" alt="members">
+                </div>
+                <div class="profilesbox">
+                    <h2 id="name">Alex Huang</h2>
+                    <h3 id="status">Web Developer Specialist</h3>
+                    <p id="bio">Alex Huang is CodeSphere's front-end developer. Alex Huang, who was born and raised in Taiwan, relocated to Canada in 2021 and enrolled at Fanshawe College to study interactive media and design.</p>
+                </div>
+            </div>
+        </section>
+        
     </div>
-    
+
+    <script src="js/main.js"></script>
 </body>
 </html>

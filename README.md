@@ -1,6 +1,6 @@
 # Deviano and Shih-Hsuan Profile Web Page
 
-TODO: Write a project description
+Create a Team Bio page based on your partners for the Integrated Project
 
 ## Installation
 
@@ -17,10 +17,6 @@ TODO: Write usage instructions
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
-
-## History
-
-TODO: Write history
 
 ## Credits
 
